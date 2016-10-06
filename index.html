@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>	   
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>  
+		<title>Reufi | Home</title>
+        <link rel="icon" href="img/logo/logo2.png"/>	
+		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/index_large.css"/>
+		<!--
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px; max-width: 999px)" href="css/index_medium.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="css/index_small.css"/>
+		-->
+	</head>
+	<body>
+		<div class="interface">
+			<header>
+			<figure id="logo-fig">
+				<img id="log1" src="img/logo/logo1.png" alt="Design by Cyborg Team"/>
+				<img id="log2" src="img/logo/logo2.png" alt="Design by Cyborg Team"/>
+				<img id="log3" src="img/logo/logo_NAME.png" alt="Design by Cyborg Team"/>
+			</figure>
+			<nav class="menu">
+   				<ul type="disc">
+        				<h1> Menu Principal </h1> 
+        				<li> <a href="index.html">Home</a></li>
+        				<li> <a href="eaeNutri.html">iae Nutri </a></li>
+        				<li> <a href="sobre.html">Sobre nós</a></li>
+	 			</ul>
+   			</nav>
+			</header>
+			<section class="postagens">
+				<hgroup id="imc-screen">
+					<h1 id="view_imc"><label for="mass-form">Calcule o seu IMC ao lado.</label></h1>
+                	<h3 id="sit_imc">Fique por dentro da sua situação.</h3>
+				</hgroup>
+				<iframe name="imctype" class="imcwindow" id="iframe" src="iframe/iframe-index.html"></iframe>
+			</section>
+			<aside class="windgets">
+				<form id="calcimc" name="imcalc" action="javascript: imc_calc();">
+                	<fieldset>
+                    	<legend>Calcule o seu IMC</legend>
+                		<input name="massa" id="mass-form" type="text" placeholder="Massa corporal (Kg)" required />
+                		<input name="altura" id="alt-form" type="text" placeholder="Altura (m)" required/>
+                        <p>Sexo: 
+                        <input name="sexo" id="f" value="fem" type="radio"/><label for="f">Feminino</label>
+                        <input name="sexo" id="m" value="mas" type="radio"/><label for="m">Masculino</label></p>
+                        <button type="submit" id="makecalc">Calcule</button>
+                    </fieldset>
+                </form>
+			</aside>
+			<footer class="rodape">
+				<p>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentado uma Vida Saldável) - By Cyborg Team - 2016 - Parnaíba-PI</p>
+			</footer>
+		</div>
+	</body>
+    <script language="javascript" src="js/imc-calc-script.js"></script>
+</html>
