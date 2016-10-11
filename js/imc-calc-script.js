@@ -6,8 +6,8 @@ function imc_calc() {
 			var imc = massa/(altura*altura) ;
 			var sex = document.imcalc.sexo.value;
 			if(sex) {
-				alert("Seu IMC é "+arred(imc));
 				document.getElementById('view_imc').innerHTML = 'Seu IMC é '+arred(imc);
+				document.getElementById("iframe").src = 'iframe/imc-1.html';
 				if(sex=="fem") { //SEXO FEMININO  
 					if ( parseFloat(19.1)<=imc && imc<=parseFloat(25.8) ) { //PESO IDEAL
 						document.getElementById('sit_imc').innerHTML = 'Parabéns! Você está dentro do peso.';
@@ -33,7 +33,7 @@ function imc_calc() {
 						document.getElementById('sit_imc').innerHTML = 'Você está abaixo do peso.';
 					}
 					else if ( parseFloat(26.5)<=imc && imc<=parseFloat(27.8) ) { //POUCO ACIMA DO PESO
-						document.getElementById('sit_imc').innerHTML = 'Você está um pouco do peso.';
+						document.getElementById('sit_imc').innerHTML = 'Você está um pouco acima do peso.';
 					}
 					else if ( parseFloat(27.9)<=imc && imc<=parseFloat(31.1) ) { //ACIMA DO PESO
 						document.getElementById('sit_imc').innerHTML = 'Você está acima do peso.';

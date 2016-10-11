@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="css/index_small.css"/>
 		-->
 	</head>
-	<body>
+	<body onLoad="iframeHeight(1)">
 		<div class="interface">
 			<header>
 			<figure id="logo-fig">
@@ -42,16 +42,17 @@
                 		<input name="massa" id="mass-form" type="text" placeholder="Massa corporal (Kg)" required />
                 		<input name="altura" id="alt-form" type="text" placeholder="Altura (m)" required/>
                         <p>Sexo: 
-                        <input name="sexo" id="f" value="fem" type="radio"/><label for="f">Feminino</label>
-                        <input name="sexo" id="m" value="mas" type="radio"/><label for="m">Masculino</label></p>
+                        <input name="sexo" id="f" class="sex" value="fem" type="radio" required /><label for="f">Feminino</label>
+                        <input name="sexo" id="m" class="sex" value="mas" type="radio"required /><label for="m">Masculino</label></p>
                         <button type="submit" id="makecalc">Calcule</button>
                     </fieldset>
                 </form>
 			</aside>
 			<footer class="rodape">
-				<p>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentado uma Vida Saldável) - By Cyborg Team - 2016 - Parnaíba-PI</p>
+				<p>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saldável) - By Cyborg Team - 2016 - Parnaíba-PI</p>
 			</footer>
 		</div>
 	</body>
     <script language="javascript" src="js/imc-calc-script.js"></script>
+	<script language="javascript" src="js/iframe-height.js"></script>
 </html>
