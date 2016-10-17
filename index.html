@@ -2,46 +2,60 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8"/>	   
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
 		<title>Reufi | Home</title>
-        <link rel="icon" href="img/logo/logo2.png"/>	
-		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/index_large.css"/>
-		<!--
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px; max-width: 999px)" href="css/index_medium.css"/>
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="css/index_small.css"/>
-		-->
+        <link rel="icon" href="img/logo/logo2.png"/>
+        <!-- DESIGN BY "JOÃO PAULO CARVALHO" -->
+        <style type="text/css">
+        	@media screen and (min-width: 1080px) {
+				#logo-fig figcaption p {
+					display: block;
+					margin-top: -75px;
+					margin-left: 179px;
+					font-weight: bold;
+				}
+			}
+		</style>
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 1079px)" href="css/index_small.css"/>
+		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1080px)" href="css/index_large.css"/>
 	</head>
-	<body onLoad="iframeHeight(1)">
+	<body>
+		<figure id="err">
+			<figcaption><p>Site incompatível com a tela<br/>do seu dispositivo!</p></figcaption>
+		</figure>
 		<div class="interface">
 			<header>
 			<figure id="logo-fig">
-				<img id="log1" src="img/logo/logo1.png" alt="Design by Cyborg Team"/>
-				<img id="log2" src="img/logo/logo2.png" alt="Design by Cyborg Team"/>
-				<img id="log3" src="img/logo/logo_NAME.png" alt="Design by Cyborg Team"/>
+				<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
+				<img id="log2" src="img/logo/logo2.png" alt="Design by João Paulo Carvalho"/>
+				<img id="log3" src="img/logo/logo_NAME.png" alt="Design by João Paulo Carvalho"/>
+				<figcaption><p>ALPHA</p></figcaption>
 			</figure>
 			<nav class="menu">
    				<ul type="disc">
-        				<h1> Menu Principal </h1> 
-        				<li> <a href="index.html">Home</a></li>
-        				<li> <a href="eaeNutri.html">iae Nutri </a></li>
-        				<li> <a href="sobre.html">Sobre nós</a></li>
+        			<h1> Menu Principal </h1> 
+        			<li onclick="window.location.href = 'index.html';"> Home</li>
+        			<li onclick="window.location.href = 'eaeNutri.html';"> Iae Nutri</li>
+        			<li onclick="window.location.href = 'sobre.html';"> Sobre nós</li>
 	 			</ul>
    			</nav>
 			</header>
 			<section class="postagens">
 				<hgroup id="imc-screen">
-					<h1 id="view_imc"><label for="mass-form">Calcule o seu IMC ao lado.</label></h1>
+					<h1 id="view_imc"><label for="mass-form">Veja aqui o seu IMC.</label></h1>
                 	<h3 id="sit_imc">Fique por dentro da sua situação.</h3>
 				</hgroup>
-				<iframe name="imctype" class="imcwindow" id="iframe" src="iframe/iframe-index.html"></iframe>
+				<iframe name="imctype" class="imcwindow" id="iframe" src="iframe/iframe-index.html" scrolling="no"></iframe>
 			</section>
 			<aside class="windgets">
 				<form id="calcimc" name="imcalc" action="javascript: imc_calc();">
                 	<fieldset>
+                		<style>#alertPont{border: 1px dashed white; margin-top: 0px; padding: 5px; text-align: center;}</style>
                     	<legend>Calcule o seu IMC</legend>
+                    	<p id="alertPont">Em caso de números decimais, utilize ponto (.) e não vírgula (,).</p>
                 		<input name="massa" id="mass-form" type="text" placeholder="Massa corporal (Kg)" required />
                 		<input name="altura" id="alt-form" type="text" placeholder="Altura (m)" required/>
-                        <p>Sexo: 
+                        <p id="sexLegend">Sexo: 
                         <input name="sexo" id="f" class="sex" value="fem" type="radio" required /><label for="f">Feminino</label>
                         <input name="sexo" id="m" class="sex" value="mas" type="radio"required /><label for="m">Masculino</label></p>
                         <button type="submit" id="makecalc">Calcule</button>
@@ -49,10 +63,10 @@
                 </form>
 			</aside>
 			<footer class="rodape">
-				<p>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saldável) - By Cyborg Team - 2016 - Parnaíba-PI</p>
+				<h3>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
+				<p>Site 100% desenvolvido em HTML5, CSS3 e Javascript</p>
 			</footer>
 		</div>
 	</body>
-    <script language="javascript" src="js/imc-calc-script.js"></script>
-	<script language="javascript" src="js/iframe-height.js"></script>
+    <script language="javascript" src="js/imc-calc-script.js"></script> 
 </html>

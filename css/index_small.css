@@ -1,49 +1,22 @@
 @charset "utf-8";
-/* CORPO DA PÁGINA */
-#interface {
-	font-family: arial, sans-serif;
-	width: 100%;
+#err {
 	display: block;
-	background-color: #ffffff;
-	margin-left: auto;
+	margin-left: auto; 
 	margin-right: auto;
+	width: 257px;
+	height: 200px;
+	background: url("../img/screenc.png")  no-repeat ;
 }
-#postagens {
-	width: 70%;
-	display: block;
-	float: left;
-}
-#windgets {
-	width: 29%;
-	display: block;
-	float: right;
-	border-left: solid 1px;
-}
-#rodape {
-	clear: both;
-	border-top: solid 1px;
-}
-/* CABEÇALHO */
-#logo-fig {
-	display: block;
-	padding-right: -50px;
-}
-#log1 {
-	margin-left: 10px;
-	opacity: 100;
-	transition: 1s;
-}
-#log2 {
-	margin-left: 10px;
+#err p {
 	display: block;
 	position: absolute;
-	margin-top: -274px;
-	opacity: 0;
-	transition: 1s;
+	margin-top: 210px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: arial, sans-serif;
 }
-#log1:hover {
+.interface {
 	opacity: 0;
-}
-#log2:hover {
-	opacity: 100;
+	overflow: hidden;
 }

@@ -1,0 +1,82 @@
+/* DESIGN BY "JOÃO PAULO CARVALHO" */
+@charset "utf-8";
+/* FORMATAÇÃO DOS VÍDEOS */
+@media screen and (min-width: 1080px) {
+	/* ARTICLE */
+	article {
+		display: block;
+		border: solid 1px rgba(0,0,0,0.1);
+		width: 49%;
+		padding-right: 10px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: #b9f9b1;
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+		min-height: 280px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		box-sizing: border-box;
+	}
+	article h2 {
+		padding-left: 8px;
+		padding-right: 12.5px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		margin-top: 0px;
+		color: #ffffff;
+		background-color: #23532f;
+		width: 100%;
+		margin-left: -10px;
+	}
+	article p {
+		border: dashed 1px rgba(0,0,0,0.5);
+		color: rgba(0,0,0,0.5);
+		text-align: justify;
+		text-indent: 30px;
+		padding: 100px;
+	}
+	#c1,#c3,#c5 {
+		float: left;
+	}
+	#c2,#c4,#c6 {
+		float: right;
+	}
+	/* ASIDE */
+	aside h2 {
+		color: #000000;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: -10px; 
+		text-align: center;
+		background-color: #b9f9b1;
+		padding: 20px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	#ft {
+		width: 100%;
+		margin-top: 20px;
+	}
+	#tx h2 {
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+		padding-left: 10px;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 4px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#tx h3 {
+		text-align: right;
+		margin-right: 5px;
+	}
+	#tx p {
+		text-indent: 50px;
+		text-align: justify;
+		margin-top: -25px;
+	}
+}

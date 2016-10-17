@@ -3,9 +3,19 @@
 	<head>
 		<meta charset="utf-8"/>	   
         <meta name="viewport" content="width=device-width, initial-scale=1"/>  
-		<title>Reufi | Eae Nutri</title>
-        <link rel="icon" href="img/logo/logo2.png"/>	
-		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/index_large.css"/>
+		<title>Reufi | Iae Nutri</title>
+        <link rel="icon" href="img/logo/logo2.png"/>
+        <!-- RESPONSIVE DESIGN BY "JOÃO PAULO CARVALHO" -->
+        <style type="text/css">
+			#logo-fig figcaption p {
+				display: block;
+				margin-top: -75px;
+				margin-left: 179px;
+				font-weight: bold;
+				}
+		</style>
+        <link rel="stylesheet" type="text/css" href="css/videos.css"/>
+		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1080px)" href="css/index_large.css"/>
 		<!--
         <link rel="stylesheet" type="text/css" media="screen and (min-width: 700px; max-width: 999px)" href="css/index_medium.css"/>
         <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="css/index_small.css"/>
@@ -15,43 +25,59 @@
 		<div class="interface">
 			<header>
 				<figure id="logo-fig">
-					<img id="log1" src="img/logo/logo1.png" alt="Design by Cyborg Team"/>
-					<img id="log2" src="img/logo/logo2.png" alt="Design by Cyborg Team"/>
-					<img id="log3" src="img/logo/logo_NAME.png" alt="Design by Cyborg Team"/>
+					<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
+					<img id="log2" src="img/logo/logo2.png" alt="Design by João Paulo Carvalho"/>
+					<img id="log3" src="img/logo/logo_NAME.png" alt="Design by João Paulo Carvalho"/>
+				<figcaption><p>ALPHA</p></figcaption>
 				</figure>
 				<nav class="menu">
    					<ul type="disc">
         				<h1> Menu Principal </h1> 
-        				<li> <a href="index.html">Home</a></li>
-        				<li> <a href="eaeNutri.html">iae Nutri </a></li>
-        				<li> <a href="sobre.html">Sobre nós</a></li>
+        				<li onclick="window.location.href = 'index.html';"> Home</li>
+        				<li onclick="window.location.href = 'eaeNutri.html';"> Iae Nutri</li>
+        				<li onclick="window.location.href = 'sobre.html';"> Sobre nós</li>
 	 				</ul>
    				</nav>
 			</header>
 			<section class="postagens"> 
-				<h1> Iae Nutri</h1> 
-				Pergunta?<br/>
-				[**VIDEO COM A RESPOSTA DA NUTRI**]<br/> 
-				Pergunta?<br/>
-				[**VIDEO COM A RESPOSTA DA NUTRI**]<br/>
-				Pergunta?<br/>
-				[**VIDEO COM A RESPOSTA DA NUTRI**]<br/>
-				Pergunta?<br/>
-				[**VIDEO COM A RESPOSTA DA NUTRI**]<br/> 
-				Pergunta?<br/>
-				[**VIDEO COM A RESPOSTA DA NUTRI**]<br/>	  
-				Pergunta?<br/>
-				[**VIDEO COM A RESPOSTA DA NUTRI**]<br/>	 
-				Pergunta?<br/>
-				[**VIDEO COM A RESPOSTA DA NUTRI**]<br/> 
+				<article id="c1">
+					<h2>Pergunta</h2>
+					<p>Vídeo</p>
+				</article>
+				<article id="c2">
+					<h2>Pergunta</h2>
+					<p>Vídeo</p>
+				</article>
+				<article id="c3">
+					<h2>Pergunta</h2>
+					<p>Vídeo</p>
+				</article>
+				<article id="c4">
+					<h2>Pergunta</h2>
+					<p>Vídeo</p>
+				</article>
+				<article id="c5">
+					<h2>Pergunta</h2>
+					<p>Vídeo</p>
+				</article>
+				<article id="c6">
+					<h2>Pergunta</h2>
+					<p>Vídeo</p>
+				</article>
 			</section>
 			<aside class="windgets">
-				<h2>Sobre a nutri</h2>
-				[**FOTO DA NUTRI**]<br/>
-				[Sobre a nutri: onde se formou, estudou, porque nutricionista etc]<br/>
+				<h2>Sobre a nutricionista</h2>
+				<img id="ft" src="img/nutri.jpg"/>
+				<span id="tx">
+					<h2>Tamires Lima Viana</h2> 
+					<h3>Nutricionista, formada pela<br/>UNINOVAFAPI - Teresina, Piauí</h3>
+    				<p>Durantes sua graduação obteve experiências grandiosas atuando em diferentes áreas como, por exemplo, na parte social na Maternidade Evangelina Rosa, na parte de alimentação no SESC Teresina e no HUT(Hospital universitário de Teresina) área de clinicas e atualmente está trabalhando na área de UAN (Unidade de Alimentação e Nutrição) onde pretende continuar atuando.</p>
+   					<p>Desde muito jovem Tamires se encantou pelo mundo da alimentação, cursou seu ensino médio no Instituto Federal de Educação,Ciência e Tecnologia do Piaui- Campus Parnaíba, onde realizou o Curso de Técnico em Edificações, porém sua paixão pela alimentação foi mais forte e incentivou-a ao estudo na área da nutrição.</p>
+				</span>
 			</aside>
 			<footer class="rodape">
-    			<p>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saldável) - By Cyborg Team - 2016 - Parnaíba-PI</p>
+				<h3>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
+				<p>Site 100% desenvolvido em HTML5, CSS3 e Javascript</p>
 			</footer>
 		</div>
 	</body>

@@ -1,3 +1,4 @@
+//SCRIPT DE CÁLCULO DE IMC - DESENVOLVIDO POR "JOÃO PAULO CARVALHO"
 function imc_calc() {
 	var massa = parseFloat(document.getElementById('mass-form').value);
 	if(massa) {
@@ -7,39 +8,48 @@ function imc_calc() {
 			var sex = document.imcalc.sexo.value;
 			if(sex) {
 				document.getElementById('view_imc').innerHTML = 'Seu IMC é '+arred(imc);
-				document.getElementById("iframe").src = 'iframe/imc-1.html';
 				if(sex=="fem") { //SEXO FEMININO  
 					if ( parseFloat(19.1)<=imc && imc<=parseFloat(25.8) ) { //PESO IDEAL
 						document.getElementById('sit_imc').innerHTML = 'Parabéns! Você está dentro do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-1.html';
 					}
 					else if ( imc<parseFloat(19.1) ) { //ABAIXO DO PESO
 						document.getElementById('sit_imc').innerHTML = 'Você está abaixo do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-2.html';
 					}
 					else if ( parseFloat(25.9)<=imc && imc<=parseFloat(27.3) ) { //POUCO ACIMA DO PESO
 						document.getElementById('sit_imc').innerHTML = 'Você está um pouco acima do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-3.html';
 					}
 					else if ( parseFloat(27.4)<=imc && imc<=parseFloat(32.3) ) { //ACIMA DO PESO
 						document.getElementById('sit_imc').innerHTML = 'Você está acima do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-4.html';
 					}
 					else { //OBESIDADE
 						document.getElementById('sit_imc').innerHTML = 'Cuidado! Você está obesa.';
+						document.getElementById("iframe").src = 'iframe/imc-5.html';
 					}
 				}
 				else if (sex=="mas") { //SEXO MASCULINO
 					if ( parseFloat(20.7)<=imc && imc<=parseFloat(26.4) ) { //PESO IDEAL
 						document.getElementById('sit_imc').innerHTML = 'Parabéns! Você está dentro do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-1.html';
 					}
 					else if ( imc<parseFloat(20.7) ) { //ABAIXO DO PESO
 						document.getElementById('sit_imc').innerHTML = 'Você está abaixo do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-2.html';
 					}
 					else if ( parseFloat(26.5)<=imc && imc<=parseFloat(27.8) ) { //POUCO ACIMA DO PESO
 						document.getElementById('sit_imc').innerHTML = 'Você está um pouco acima do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-3.html';
 					}
 					else if ( parseFloat(27.9)<=imc && imc<=parseFloat(31.1) ) { //ACIMA DO PESO
 						document.getElementById('sit_imc').innerHTML = 'Você está acima do peso.';
+						document.getElementById("iframe").src = 'iframe/imc-4.html';
 					}
 					else { //OBESIDADE
 						document.getElementById('sit_imc').innerHTML = 'Cuidado! Você está obeso.';
+						document.getElementById("iframe").src = 'iframe/imc-5.html';
 					}
 				}
 			}
