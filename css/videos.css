@@ -38,11 +38,21 @@
 		text-indent: 30px;
 		padding: 100px;
 	}
+	article iframe {
+		width: 100%;
+		height: 235px;
+	}
 	#c1,#c3,#c5 {
 		float: left;
 	}
 	#c2,#c4,#c6 {
 		float: right;
+	}
+	#c0 {
+		width: 100%;
+	}
+	#c0 iframe {
+		height: 494px;
 	}
 	/* ASIDE */
 	aside h2 {
