@@ -25,7 +25,7 @@ function imc_calc() {
 						document.getElementById('sit_imc').innerHTML = 'Você está acima do peso.';
 						document.getElementById("iframe").src = 'iframe/imc-4.html';
 					}
-					else { //OBESIDADE
+					else if ( imc>parseFloat(32.3) ){ //OBESIDADE
 						document.getElementById('sit_imc').innerHTML = 'Cuidado! Você está obesa.';
 						document.getElementById("iframe").src = 'iframe/imc-5.html';
 					}
@@ -47,7 +47,7 @@ function imc_calc() {
 						document.getElementById('sit_imc').innerHTML = 'Você está acima do peso.';
 						document.getElementById("iframe").src = 'iframe/imc-4.html';
 					}
-					else { //OBESIDADE
+					else if ( imc>parseFloat(31.1) ) { //OBESIDADE
 						document.getElementById('sit_imc').innerHTML = 'Cuidado! Você está obeso.';
 						document.getElementById("iframe").src = 'iframe/imc-5.html';
 					}
