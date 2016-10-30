@@ -110,7 +110,10 @@
 				<p>Esta turma, durante a reaização do projeto, no ano de 2016, estava a cursar o 1º ano do Curso Técnico em Informática Integrado ao Ensino Médio no IFPI (Instituto Federal do Piauí) - Campus Parnaíba. Turma composta por 50 alunos, aonde a faixa etária varia dos 14 aos 20 anos.</p>
 			</aside>
 			<aside class="windgets3">
-				<h2 onclick="window.location.href='fotos.html'">CLIQUE PARA VER AS FOTOS DA 13ª Semana Nacional de Ciência e Tecnologia</h2>
+				<h2 onclick="window.location.href='fotos.html'" onmouseout="fadeH2('out')" onmousemove="fadeH2('in')" id="fadeinH2">CLIQUE PARA VER AS FOTOS DA 13ª Semana Nacional de Ciência e Tecnologia</h2>
+				<figure onmouseout="fadeH2('out')" onmousemove="fadeH2('in')" onclick="window.location.href='fotos.html'" id="figCap">
+					<img id="capa" src="img/fotos-snct/reufi (capa).jpg">
+				</figure>
 			</aside>
 			<footer class="rodape">
 				<h3>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
@@ -118,4 +121,5 @@
 			</footer>
 		</div>
 	</body>
+	<script language="javascript" src="js/fadein-talk.js"></script>
 </html>
