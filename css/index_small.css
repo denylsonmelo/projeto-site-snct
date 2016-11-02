@@ -3,14 +3,17 @@
 	display: block;
 	margin-left: auto; 
 	margin-right: auto;
-	width: 257px;
+	width: 100%;
 	height: 200px;
-	background: url("https://ap.imagensbrasil.org/images/2016/10/30/screenc.png")  no-repeat ;
+}
+#err img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 #err p {
 	display: block;
-	position: absolute;
-	margin-top: 210px;
+	margin-top: 10px;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;

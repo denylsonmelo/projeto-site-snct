@@ -133,6 +133,13 @@ article p {
 	font-size: 20pt;
 	font-weight: bold;
 }
+#avis {
+	position: absolute;
+	display: block;
+	font-size: 10pt;
+	margin-left: 65%;
+	margin-top: -26px;
+}
 /* CONVERSA DE AJUDA */
 #talk1 {
 	opacity: 0;
@@ -165,57 +172,52 @@ article p {
 	margin-right: -40px;
 }
 #balao1 {
-	display: block;
 	margin-left: -40px;
 	margin-right: auto;
-	width: 50%;
 }
 #balao2 {
-	display: block;
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: -40px;
-	width: 50%;
 }
 #balao3 {
-	display: block;
 	margin-left: -40px;
 	margin-right: auto;
-	width: 50%;
 }
 #balao4 {
-	display: block;
 	margin-top: 45px;
 	margin-left: -40px;
 	margin-right: auto;
-	width: 50%;
 }
 #balao5 {
-	display: block;
 	margin-top: 5px;
 	margin-left: auto;
 	margin-right: -40px;
-	width: 50%;
 }
 #balao6 {
-	display: block;
 	margin-top: 5px;
 	margin-left: -40px;
 	margin-right: auto;
-	width: 50%;
 }
 #balao7 {
-	display: block;
 	margin-top: 20px;
 	margin-bottom: -40px;
 	margin-left: auto;
 	margin-right: -10px;
-	width: 50%;
 }
 #balao8 {
-	display: block;
 	margin-top: 5px;
 	margin-left: auto;
 	margin-right: -40px;
-	width: 50%;
+}
+@media screen and (max-width: 1000px) {
+	.balao {
+		display: block;
+		width: 50%;
+	}
+} @media screen and (min-width: 1000px) {
+	.balao {
+		display: block;
+		width: 400px;
+	}
 }
