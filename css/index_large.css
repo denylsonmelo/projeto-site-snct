@@ -1,6 +1,7 @@
 ﻿/* DESIGN BY "JOÃO PAULO CARVALHO" */
 @charset "utf-8";
-#err {
+#mob {
+	margin-top: -100px;
 	position: absolute;
 	opacity: 0;
 }
@@ -10,6 +11,9 @@
 	width: 100%;
 	display: block;
 	background-color: #ffffff;
+}
+header {
+	font-family: arial, sans-serif;
 }
 .postagens {
 	display: block;
@@ -120,8 +124,13 @@
 	display: block;
 	margin-left: 150px;
 	margin-top: -90px;
-}#logo-fig p {
+} #alpha {
 	font-weight: bold;
+}
+#mobile {
+	position: absolute;
+	margin-top: -5000px;
+	opacity: 0;
 }
 span#tavisNome {
 	font-weight: bold;
@@ -204,18 +213,18 @@ header {
 	opacity: 100;
 }
 /* MENU PRINCIPAL */
-nav.menu{
+.menu{
 	display: block;
 	position: absolute;
-	margin-top: -45px;
-	margin-left: -10.29%;
+	margin-top: -60px;
+	margin-left: -5px;
 	width: 99.6%;
 	background: #90EE90;
 	box-sizing: border-box;
 	border: solid 1px;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
-nav.menu ul{
+.menu ul{
 	font-family: Arial, sans-serif;
 	font-size: 12pt;
 	font-weight: bold;
@@ -224,7 +233,7 @@ nav.menu ul{
 	margin-top: 0px;
 	margin-bottom: 0px;
  }
- nav.menu li{
+ .menu li{
  	color: black;
     display: inline-block;
     background: #90EE90;
@@ -232,10 +241,10 @@ nav.menu ul{
     margin-right: -5px;
     transition: background-color 1s;
  }
- nav.menu h1{
+ .menu h1{
     display: none;
  }
- nav.menu li:hover{
+ .menu li:hover{
  	color: #ffffff;
     background-color: #23532f; 
     cursor: pointer;
