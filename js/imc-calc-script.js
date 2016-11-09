@@ -1,4 +1,4 @@
-//SCRIPT DE CÁLCULO DE IMC - DESENVOLVIDO POR "JOÃO PAULO CARVALHO"
+// SCRIPT DE CÁLCULO DE IMC - DESENVOLVIDO POR "JOÃO PAULO CARVALHO"
 function imc_calc() {
 	var massa = parseFloat(document.getElementById('mass-form').value);
 	if(massa) {
