@@ -236,17 +236,21 @@ header {
 	margin-bottom: 0px;
  }
  .menu li{
- 	color: black;
     display: inline-block;
+    padding: 15px 10px 14px 0px;
+ }
+ .menu a {
+ 	text-decoration: none;
+ 	color: black;
     background: #90EE90;
     padding: 15px;
-    margin-right: -5px;
+    margin-right: -15px;
     transition: background-color 1s;
  }
  .menu h1{
     display: none;
  }
- .menu li:hover{
+ .menu a:hover{
  	color: #ffffff;
     background-color: #23532f; 
     cursor: pointer;
