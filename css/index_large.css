@@ -71,6 +71,9 @@ header {
 	border-top-left-radius: 5px;
 	transition: 0.5s;
 }
+.windgets3 a {
+	text-decoration: none;
+}
 #figCap {
 	display: block;
 	margin-left: -10px;
@@ -83,12 +86,6 @@ header {
 #capa {
 	width: 100%;
 	padding: 0px;
-}
-#figCap:hover {
-	cursor: pointer;
-}
-.windgets3 h2:hover {
-	cursor: pointer;
 }
 .windgets2 h2 {
 	color: #000000;
