@@ -1,9 +1,11 @@
 ﻿/* DESIGN BY "JOÃO PAULO CARVALHO" */
 @charset "utf-8";
 #mob {
-	margin-top: -100px;
+	margin-top: -99999px;
 	position: absolute;
 	opacity: 0;
+} #err {
+	margin-top: -99999px;
 }
 /* CORPO DA PÁGINA */
 .interface {
@@ -79,7 +81,7 @@ header {
 	margin-left: -10px;
 	margin-right: -10px;
 	margin-top: 5px;
-	margin-bottom: -14px;
+	margin-bottom: -13px;
 	padding: -10px;
 	z-index: 1;
 }

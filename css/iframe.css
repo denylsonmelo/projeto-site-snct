@@ -20,6 +20,10 @@ h1 {
 	text-decoration: none;
     transition: .5s;
 }
+.menu-sec a:hover {
+	color: #ffffff;
+	background-color: #23532f;
+}
 .menu-sec ul {
 	border: solid 1px;
 	background-color: #90EE90;
@@ -30,10 +34,6 @@ h1 {
 }
 .menu-sec li {
     display: inline-block;
-}
-.menu-sec a:hover {
-	color: #ffffff;
-	background-color: #23532f;
 }
 
 /* ARTICLE */
