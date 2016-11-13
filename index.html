@@ -4,7 +4,7 @@
 		<meta charset="utf-8"/>	   
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
 		<title>Reufi | Home</title>
-        <link rel="icon" href="http://oi65.tinypic.com/oida0w.jpg"/>
+        <link rel="icon" href="img/logo/logo2.png"/>
         <!-- DESIGN BY "JOÃO PAULO CARVALHO" -->
         <style type="text/css">
         	@media screen and (min-width: 1080px) {
@@ -20,11 +20,19 @@
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1080px)" href="css/index_large.css"/>
 	</head>
 	<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=512147582177041";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		<header>
 		<figure id="logo-fig">
-			<img id="log1" src="http://oi64.tinypic.com/149y5hf.jpg" alt="Design by João Paulo Carvalho"/>
-			<img id="log2" src="http://oi65.tinypic.com/oida0w.jpg" alt="Design by João Paulo Carvalho"/>
-			<img id="log3" src="http://oi67.tinypic.com/2ex1zlk.jpg" alt="Design by João Paulo Carvalho"/>
+			<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
+			<img id="log2" src="img/logo/logo2.png" alt="Design by João Paulo Carvalho"/>
+			<img id="log3" src="img/logo/logo_NAME.png" alt="Design by João Paulo Carvalho"/>
 			<figcaption>
 				<p id="alpha">ALPHA</p>
 				<p id="mobile">MOBILE</p>
@@ -32,7 +40,7 @@
 		</figure>
 		<div id="mob">
 			<figure id="err">
-				<img src="https://ap.imagensbrasil.org/images/2016/10/30/screenc.png">
+				<img src="img/screenc.png">
 				<figcaption><p>Página em construção</p></figcaption>
 			</figure>
 		</div>
@@ -77,12 +85,13 @@
 				<a href="fotos.html">
 				<h2 onmouseout="fadeH2('out')" onmousemove="fadeH2('in')" id="fadeinH2">CLIQUE PARA VER AS FOTOS DA 13ª SEMANA NACIONAL DE CIÊNCIA E TECNOLOGIA</h2>
 				<figure onmouseout="fadeH2('out')" onmousemove="fadeH2('in')" id="figCap">
-					<img id="capa" src="http://i64.tinypic.com/oiajv5.jpg">
+					<img id="capa" src="img/fotos-snct/reufi-capa.jpg">
 				</figure></a>
 			</aside>
-			<footer class="rodape">
+			<footer class="rodape" id="rod">
 				<h3>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
 				<p>Site 100% desenvolvido em HTML5, CSS3 e Javascript</p>
+				<div class="fb-comments" data-href="https://denylsonmelo.github.io/projeto-site-snct/" data-numposts="8"></div>
 			</footer>
 		</div>
 	</body>

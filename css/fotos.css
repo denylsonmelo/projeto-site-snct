@@ -9,6 +9,32 @@
 	font-weight: bold;
 }
 /* FORMATAÇÃO DO ALBUM */
+#viewClass {
+	position: absolute;
+	padding: 15px;
+	margin: 0px 0px 0px -5000px;
+	text-transform: uppercase;
+	font-family: arial,sans-serif;
+	font-weight: bold;
+	font-size: 13pt;
+	background-color: #b9f9b1;
+	color: #000000;
+	border: 1px solid black;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+	border-radius: 10px;
+	transition: 0.5s;
+}
+#viewClass:hover {
+	cursor: pointer;
+	background-color: #23532f;
+	border-radius: 0px;
+	color: #ffffff;
+	transition: 0.3s;
+}
+#viewClass:active {
+	background-color: #b9f9b1;
+	color: #000000;
+}
 #date {
 	font-size: 10pt;
 	text-align: right;

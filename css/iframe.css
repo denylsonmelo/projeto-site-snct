@@ -14,25 +14,26 @@ h1 {
 	margin-bottom: -10px;
 }
 .menu-sec a {
+	padding: 10px;
+	color: #000000;
+	font-weight: bold;
 	text-decoration: none;
+    transition: .5s;
 }
 .menu-sec ul {
 	border: solid 1px;
 	background-color: #90EE90;
 	text-transform: uppercase;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+	padding-top: 9.9px;
+	padding-bottom: 9px;
 }
 .menu-sec li {
-	padding: 10px;
-	color: #000000;
-	font-weight: bold;
     display: inline-block;
-    transition: .5s;
 }
-.menu-sec li:hover {
+.menu-sec a:hover {
 	color: #ffffff;
 	background-color: #23532f;
-	cursor: pointer;
 }
 
 /* ARTICLE */
@@ -134,11 +135,15 @@ article p {
 	font-weight: bold;
 }
 #avis {
-	position: absolute;
 	display: block;
-	font-size: 10pt;
-	margin-left: 65%;
-	margin-top: -26px;
+	float: right;
+	margin-top: -10px;
+	margin-right: 0px;
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #23532f;
+	padding: 10px 10px 9px 10px;
+	border-left: 1px dashed black;
 }
 /* CONVERSA DE AJUDA */
 #talk1 {
@@ -203,7 +208,7 @@ article p {
 	margin-top: 20px;
 	margin-bottom: -40px;
 	margin-left: auto;
-	margin-right: -10px;
+	margin-right: -180px;
 }
 #balao8 {
 	margin-top: 5px;
