@@ -1,6 +1,6 @@
 ﻿/* DESIGN BY "JOÃO PAULO CARVALHO" */
 @charset "utf-8";
-#mob {
+#mob,#comming {
 	margin-top: -99999px;
 	position: absolute;
 	opacity: 0;
@@ -104,20 +104,7 @@ header {
 .windgets2 p {
 	text-indent: 30px;
 }
-.rodape {
-	clear: both;
-	color: #ffffff;
-	background-color: #474747;
-	padding: 10px;
-	width: 98.5%;
-}
-.rodape h3 {
-	text-align: center;
-	font-weight: normal;
-}
-.rodape p {
-	margin-top: -8px;
-}
+
 #logo-fig figcaption {
 	position: absolute;
 	display: block;
@@ -131,9 +118,7 @@ header {
 	margin-top: -5000px;
 	opacity: 0;
 }
-span#tavisNome {
-	font-weight: bold;
-}
+
 /* IMC BOX */ 
 #imc-screen {
 	display: block;
@@ -251,8 +236,7 @@ header {
  }
  .menu a:hover{
  	color: #ffffff;
-    background-color: #23532f; 
-    cursor: pointer;
+    background-color: #23532f;
  }
 /* CALCULO IMC */
 #calcimc {
@@ -322,4 +306,21 @@ fieldset legend {
 /* RODAPÉ */ 
 footer p {
 	text-align: center;
+}
+.rodape {
+	clear: both;
+	color: #ffffff;
+	background-color: #474747;
+	padding: 10px;
+	width: 98.5%;
+}
+.rodape h3 {
+	text-align: center;
+	font-weight: normal;
+}
+.rodape p {
+	margin-top: -8px;
+}
+span#tavisNome {
+	font-weight: bold;
 }

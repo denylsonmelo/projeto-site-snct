@@ -1,39 +1,119 @@
 @charset "utf-8";
 /* INTERFACE PRINCIPAL */
-* {
+header {
 	font-family: arial,sans-serif;
 	background-color: #6fb965;
+	margin: -17px -10px 0px -10px;
+	padding: 3px 0px 7px 0px;
+} *{
+	font-family: arial,sans-serif;
 }
-body {
-	overflow: hidden;
-}
-#mob {
-	margin-top: 30px;
-}
-#err {
-	display: block;
-	margin-left: auto; 
-	margin-right: auto;
-	width: 100%;
-	height: 200px;
-}
-#err img {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-#err p {
-	display: block;
-	margin-top: 10px;
+#comming {
 	text-align: center;
-	text-transform: uppercase;
-	font-size: 15pt;
 	font-weight: bold;
-	font-family: arial, sans-serif;
+	font-size: 20pt;
+	padding: 15px;
+	margin: 0px;
 }
-.interface {
+.windgets2 {
+	color: white;
+	display: block;
+	width: 100%;
+	padding: 10px; 
+	background-color: #23532f;
+	margin: 0px 0px 0px -10px;
+	border-top: 1px solid rgba(0,0,0,1);
+}
+.windgets2 h2 {
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14pt;
+	margin: -10px; 
+	text-align: center;
+	background-color: #b9f9b1;
+	padding: 20px;
+}
+.windgets2 p {
+	text-indent: 30px;
+}
+.windgets3 {
+	color: white;
+	display: block;
+	width: 100%;
+	padding: 10px; 
+	background-color: #23532f;
+	margin: 0px 0px 0px -10px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-top: 1px solid rgba(256,256,256,1);
+}
+.windgets3 h2 {
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15pt;
+	margin: -10px; 
+	text-align: center;
+	background-color: #b9f9b1;
+	padding: 20px;
+	transition: 0.5s;
+}
+.windgets3 a {
+	text-decoration: none;
+}
+#figCap {
+	display: block;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: 5px;
+	margin-bottom: -15px;
+	padding: -10px;
+	z-index: 1;
+}
+#capa {
+	width: 100%;
+	padding: 0px;
+}
+/* ERRO MOBILE */
+#mob {
+	margin-top: -99999px;
+	position: absolute;
 	opacity: 0;
-	overflow: hidden;
+} #err {
+	margin-top: -99999px;
+}
+/* MENU */
+.menu h1 {
+	display: none;
+}
+.menu ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px -10px -10px -10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.menu li {
+	font-family: arial,sans-serif;
+    text-align: center;
+    margin: 10px 20px 10px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15pt;
+}
+.menu a {
+	display: block;
+	text-decoration: none;
+	color: black;
+    background: #90EE90;
+    padding: 10px;
+    margin: -10px auto -10px auto;    
+    width: 100%;
+    transition: 0.5s;
+}
+.menu a:hover {
+	color: #ffffff;
+    background-color: #23532f;
 }
 /* HEADER */
 #logo-fig {
@@ -66,4 +146,96 @@ body {
 	font-weight: bold;
 	margin-top: 80px;
 	margin-left: 190px;
+}
+/* CÁLCULO IMC */
+.windgets {
+	color: white;
+	display: block;
+	padding: 10px; 
+	background-color: #23532f;
+	margin: 0px 0px 0px -10px;
+	width: 100%;
+}
+#imc-screen {
+	display: block;
+	text-align: center;
+	margin: 10px -10px 0px -10px;
+}
+#view_imc {
+	background-color: #b9f9b1;
+	padding: 10px;
+	margin: 0px;
+	border-bottom: 1px dashed black;
+}
+#calcimc {
+	display: block;
+	border: rgba(0,0,0,0);
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+fieldset {
+	border: none;
+}
+fieldset legend {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 0px;
+	font-weight: bold;
+}
+#mass-form {
+	width: 100%;
+	padding: 10px;
+	margin-left: -11px;
+	font-size: 15px;
+	border: solid 1px rgba(0,0,0,0.3);
+}
+#alt-form {
+	width: 100%;
+	padding: 10px;
+	margin-left: -11px;
+	font-size: 15px;
+	margin-top: 5px;
+	border: solid 1px rgba(0,0,0,0.3);
+}
+#sexLegend {
+	margin-top: 7px; 
+	font-size: 19px;
+}
+#makecalc {
+	display: block;
+	margin-top: -10px;
+	padding-left: 100.5px;
+	padding-right: 100.5px;
+	font-size: 20px;
+	background-color: white;
+	border: solid 1px rgba(0,0,0,0.3); 
+}
+/* IMC WINDOW */
+.imcwindow {
+	position: absolute;
+	opacity: 0;
+	margin-left: -9999px;
+}
+/* RODAPÉ */
+footer h3 {
+	text-align: center;
+	font-weight: normal;
+}
+footer p {
+	text-align: center;
+}
+.rodape {
+	clear: both;
+	color: #ffffff;
+	background-color: #474747;
+	padding: 10px;
+	width: 100%;
+	margin: 0px 0px 0px -10px;
+}
+.rodape p {
+	margin-top: -8px;
+}
+span#tavisNome {
+	font-weight: bold;
 }
