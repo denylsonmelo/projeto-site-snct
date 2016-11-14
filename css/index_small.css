@@ -199,11 +199,12 @@ fieldset legend {
 	border: solid 1px rgba(0,0,0,0.3);
 }
 #selectSex {
-	margin: 5px 0px 15px 0px;
+	margin: 5px auto 15px auto;
 	padding: 5px 28px 5px 27px;
 	font-size: 15pt;
 	background-color: white;
 	display: block;
+	border: solid 1px rgba(0,0,0,0.3);
 
 }
 #makecalc {
