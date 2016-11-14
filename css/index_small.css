@@ -8,6 +8,10 @@ header {
 } *{
 	font-family: arial,sans-serif;
 }
+body {
+	margin-bottom: 0px;
+	widows: 100%;
+}
 #comming {
 	text-align: center;
 	font-weight: bold;
@@ -237,6 +241,7 @@ footer p {
 	background-color: #474747;
 	padding: 10px;
 	width: 100%;
+	display: block;
 	margin: 0px 0px 0px -10px;
 }
 .rodape p {
