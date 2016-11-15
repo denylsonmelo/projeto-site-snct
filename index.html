@@ -20,6 +20,15 @@
 		<link rel="stylesheet" type="text/css" media="screen and (max-width: 1079px") href="css/index_small.css"/>
 	</head>
 	<body>
+	<script language="javascript" src="js/facebook-sdk.js"></script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=512147582177041";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		<header>
 		<figure id="logo-fig">
 			<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
@@ -82,10 +91,19 @@
 				<figure onmouseout="fadeH2('out')" onmousemove="fadeH2('in')" id="figCap">
 					<img id="capa" src="img/fotos-snct/reufi-capa.jpg">
 				</figure></a>
+				<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 			</aside>
 			<footer class="rodape" id="rod">
 				<h3>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
 				<p>Site 100% desenvolvido em HTML5, CSS3 e Javascript</p>
+				
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freufi.tavis%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=938081739601081" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				
 			</footer>
 		</div>
 	</body>
