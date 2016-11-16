@@ -7,8 +7,16 @@
         <link rel="icon" href="img/logo/logo2.png"/>
         <!-- DESIGN BY "JOÃO PAULO CARVALHO" -->
         <style type="text/css">
-        @media screen and (max-width: 1079px) {
-				#logo-fig figcaption p {
+        	@media screen and (min-width: 1080px) {
+				#logofig figcaption p {
+					display: block;
+					margin-top: -75px;
+					margin-left: 129px;
+					font-weight: bold;
+				}
+			}
+        	@media screen and (max-width: 1079px) {
+				#logofig figcaption p {
 					margin-left: 140px;
 				}
 			}
@@ -19,7 +27,7 @@
 	</head>
 	<body>
 		<header>
-		<figure id="logo-fig">
+		<figure id="logofig">
 			<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
 			<img id="log2" src="img/logo/logo2.png" alt="Design by João Paulo Carvalho"/>
 			<img id="log3" src="img/logo/logo_NAME.png" alt="Design by João Paulo Carvalho"/>
@@ -28,12 +36,6 @@
 				<p id="mobile">MOBILE</p>
 			</figcaption>
 		</figure>
-		<div id="mob">
-			<figure id="err">
-				<img src="img/screenc.png">
-				<figcaption><p>Página em construção</p></figcaption>
-			</figure>
-		</div>
 		</header>
 		<div class="interface">
 			<nav class="menu">
@@ -41,7 +43,7 @@
         			<h1> Menu Principal </h1> 
         			<li><a href="index.html"> Home </a></li>
         			<li><a href="eaeNutri.html"> Iae Nutri </a></li>
-        			<li><a href="sobre.html"> Sobre nós </a></li>
+        			<li><a href="sobre.html" id="here"> Sobre nós </a></li>
 	 			</ul>
    			</nav>
 			<section class="postagens">

@@ -8,7 +8,7 @@
         <!-- DESIGN BY "JOÃO PAULO CARVALHO" -->
         <style type="text/css">
         	@media screen and (min-width: 1080px) {
-				#logo-fig figcaption p {
+				#logofig figcaption p {
 					display: block;
 					margin-top: -75px;
 					margin-left: 179px;
@@ -30,7 +30,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 		<header>
-		<figure id="logo-fig">
+		<figure id="logofig">
 			<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
 			<img id="log2" src="img/logo/logo2.png" alt="Design by João Paulo Carvalho"/>
 			<img id="log3" src="img/logo/logo_NAME.png" alt="Design by João Paulo Carvalho"/>
@@ -39,26 +39,20 @@
 				<p id="mobile">MOBILE</p>
 			</figcaption>
 		</figure>
-		<div id="mob">
-			<figure id="err">
-				<img src="img/screenc.png">
-				<figcaption><p>Página em construção</p></figcaption>
-			</figure>
-		</div>
 		</header>
 		<div class="interface">
 			<nav class="menu">
    				<ul type="disc">
         			<h1> Menu Principal </h1> 
-        			<li><a href="index.html"> Home </a></li>
+        			<li><a href="index.html" id="here"> Home </a></li>
         			<li><a href="eaeNutri.html"> Iae Nutri </a></li>
         			<li><a href="sobre.html"> Sobre nós </a></li>
 	 			</ul>
    			</nav>
 			<section class="postagens">
-				<hgroup id="imc-screen">
-					<h1 id="view_imc"><label for="mass-form">Veja aqui o seu IMC.</label></h1>
-                	<h3 id="sit_imc">Fique por dentro da sua situação.</h3>
+				<hgroup id="imcscreen">
+					<h1 id="viewimc"><label for="massform">Veja aqui o seu IMC.</label></h1>
+                	<h3 id="sitimc">Fique por dentro da sua situação.</h3>
 				</hgroup>
 				<iframe name="imctype" class="imcwindow" id="iframe" src="iframe/iframe-index.html" scrolling="no"></iframe>
 			</section>
@@ -68,8 +62,8 @@
                 		<style>#alertPont{border: 1px dashed white; margin-top: 0px; padding: 5px; text-align: center;}</style>
                     	<legend>Calcule o seu IMC</legend>
                     	<p id="alertPont">Em caso de números decimais, utilize ponto (.) e não vírgula (,).</p>
-                		<input name="massa" id="mass-form" type="text" placeholder="Massa corporal (Kg)" required />
-                		<input name="altura" id="alt-form" type="text" placeholder="Altura (m)" required/>
+                		<input name="massa" id="massform" type="text" placeholder="Massa corporal (Kg)" required />
+                		<input name="altura" id="altform" type="text" placeholder="Altura (m)" required/>
                         <select name="sexo" id="selectSex" placeholder="Informe o seu sexo">
                         	<option if="n" value="0">Selecione o seu sexo</option>
                         	<option id="f" value="fem">Feminino</option>
@@ -93,12 +87,18 @@
 				</figure></a>
 			</aside>
 			<footer class="rodape" id="rod">
-				<h3>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
-				<p>Site 100% desenvolvido em HTML5, CSS3 e Javascript</p>
-				<!--
-				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freufi.tavis%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=938081739601081" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-				<div class="fb-comments" data-href="https://denylsonmelo.github.io/projeto-site-snct/index.html" data-width="550" data-numposts="5" data-colorscheme="dark"></div>
-				-->
+				<div class="fbox" id="curtidas">
+					<h1>Fã Page</h1>
+					<h2>Curta nossa pagina do Facebook</h2>
+					<iframe id="curti" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freufi.tavis%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=938081739601081" width="100%" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+				<div class="fbox" id="comentarios">
+					<h1>Dê a sua opnião</h1>
+					<h2>Ajude a dar continuidade ao projeto</h2>
+					<div id="comm" class="fb-comments" data-href="https://denylsonmelo.github.io/projeto-site-snct/index.html" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
+				</div>
+				<h3 class="declar">Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
+				<p class="declar">Site 100% desenvolvido em HTML5, CSS3 e Javascript</p>
 			</footer>
 		</div>
 	</body>

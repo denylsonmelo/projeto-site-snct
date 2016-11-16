@@ -10,7 +10,7 @@ header {
 }
 body {
 	margin-bottom: 0px;
-	widows: 100%;
+	width: 100%;
 }
 #comming {
 	text-align: center;
@@ -78,14 +78,6 @@ body {
 	width: 100%;
 	padding: 0px;
 }
-/* ERRO MOBILE */
-#mob {
-	margin-top: -99999px;
-	position: absolute;
-	opacity: 0;
-} #err {
-	margin-top: -99999px;
-}
 /* MENU */
 .menu h1 {
 	display: none;
@@ -119,8 +111,12 @@ body {
 	color: #ffffff;
     background-color: #23532f;
 }
+#here {
+ 	color: #ffffff;
+    background-color: #23532f;
+ }
 /* HEADER */
-#logo-fig {
+#logofig {
 	display: block;
 	width: 305px;
 	margin-left: auto;
@@ -160,12 +156,12 @@ body {
 	margin: 0px 0px 0px -10px;
 	width: 100%;
 }
-#imc-screen {
+#imcscreen {
 	display: block;
 	text-align: center;
 	margin: 10px -10px 0px -10px;
 }
-#view_imc {
+#viewimc {
 	background-color: #b9f9b1;
 	padding: 10px;
 	margin: 0px;
@@ -187,14 +183,14 @@ fieldset legend {
 	padding-top: 0px;
 	font-weight: bold;
 }
-#mass-form {
+#massform {
 	width: 100%;
 	padding: 10px;
 	margin-left: -11px;
 	font-size: 15px;
 	border: solid 1px rgba(0,0,0,0.3);
 }
-#alt-form {
+#altform {
 	width: 100%;
 	padding: 10px;
 	margin-left: -11px;
@@ -225,15 +221,17 @@ fieldset legend {
 .imcwindow {
 	position: absolute;
 	opacity: 0;
-	margin-left: -9999px;
+	margin: -99999px 0px 0px -9999px;
 }
 /* RODAPÉ */
-footer h3 {
+.rodape h3 {
 	text-align: center;
 	font-weight: normal;
+	margin-top: 10px;
 }
-footer p {
+.rodape p {
 	text-align: center;
+	margin-top: -8px;
 }
 .rodape {
 	clear: both;
@@ -244,9 +242,24 @@ footer p {
 	display: block;
 	margin: 0px 0px 0px -10px;
 }
-.rodape p {
-	margin-top: -8px;
-}
 span#tavisNome {
 	font-weight: bold;
+}
+.fbox {
+	display: block;
+	margin: 0px auto 0px auto;
+	width: 90%;
+}
+.fbox h1 {	
+	font-size: 23pt;
+}
+.fbox h2 {
+	margin-top: -18px;
+	font-size: 15pt;
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+}
+.declar {
+	display: block;
+	margin-top: 0px;
 }

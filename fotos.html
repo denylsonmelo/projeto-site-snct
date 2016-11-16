@@ -9,10 +9,20 @@
         <link rel="stylesheet" type="text/css" href="css/fotos.css"/>
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 1079px)" href="css/index_small.css"/>
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1080px)" href="css/index_large.css"/>
+		<style type="text/css">
+        	@media screen and (min-width: 1080px) {
+				#logofig figcaption p {
+					display: block;
+					margin-top: -75px;
+					margin-left: 179px;
+					font-weight: bold;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<header>
-		<figure id="logo-fig">
+		<figure id="logofig">
 			<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
 			<img id="log2" src="img/logo/logo2.png" alt="Design by João Paulo Carvalho"/>
 			<img id="log3" src="img/logo/logo_NAME.png" alt="Design by João Paulo Carvalho"/>
@@ -21,12 +31,6 @@
 				<p id="mobile">MOBILE</p>
 			</figcaption>
 		</figure>
-		<div id="mob">
-			<figure id="err">
-				<img src="img/screenc.png">
-				<figcaption><p>Página em construção</p></figcaption>
-			</figure>
-		</div>
 		</header>
 		<div class="interface">
 			<nav class="menu">
@@ -35,6 +39,7 @@
         			<li><a href="index.html"> Home </a></li>
         			<li><a href="eaeNutri.html"> Iae Nutri </a></li>
         			<li><a href="sobre.html"> Sobre nós </a></li>
+        			<li><a href="fotos.html" id="here">Fotos da 13ª SNCT</a></li>
 	 			</ul>
    			</nav>
 			<section class="postagens">
