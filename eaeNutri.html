@@ -21,6 +21,15 @@
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1080px)" href="css/index_large.css"/>
 	</head>
 	<body>
+	<script language="javascript" src="js/facebook-sdk.js"></script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=512147582177041";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		<header>
 		<figure id="logofig">
 			<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
@@ -41,6 +50,9 @@
         			<li><a href="sobre.html"> Sobre nós </a></li>
 	 			</ul>
    			</nav>
+   			<div id="ajud">
+   				<a id="textAjud" href="#rod">Ajude o projeto</a>
+   			</div>
 			<section class="postagens"> 
 				<article id="c0">
 					<h2>Por que é importante se preocupar com uma alimentação saudável na adolescência?</h2>
@@ -88,9 +100,19 @@
 					<img id="capa" src="img/fotos-snct/reufi-capa.jpg">
 				</figure></a>
 			</aside>
-			<footer class="rodape">
-				<h3>Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
-				<p>Site 100% desenvolvido em HTML5, CSS3 e Javascript</p>
+			<footer class="rodape" id="rod">
+				<div class="fbox" id="curtidas">
+					<h1>Fã Page</h1>
+					<h2>Curta nossa pagina do Facebook</h2>
+					<iframe id="curti" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freufi.tavis%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=938081739601081" width="100%" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+				<div class="fbox" id="comentarios">
+					<h1>Dê a sua opnião</h1>
+					<h2>Ajude a dar continuidade ao projeto</h2>
+					<div id="comm" class="fb-comments" data-href="https://denylsonmelo.github.io/projeto-site-snct/index.html" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
+				</div>
+				<h3 class="declar">Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
+				<p class="declar">Site 100% desenvolvido em HTML5, CSS3 e Javascript<br/>Otimizado para <span id="tavisNome">Google Chrome</span> e <span id="tavisNome">Mozilla Firefox</span>.</p>
 			</footer>
 		</div>
 	</body>
