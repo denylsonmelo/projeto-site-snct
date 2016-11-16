@@ -371,6 +371,7 @@ span#tavisNome {
 #comentarios {
 	float: right;
 	width: 60%;
+	margin-bottom: 10px;
 }
 .fbox {
 	display: block;
