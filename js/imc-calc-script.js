@@ -12,7 +12,7 @@ function imc_calc() {
 			else {
 				if(sex) {
 					document.getElementById('viewimc').innerHTML = 'Seu IMC é '+arred(imc);
-					window.location.href = "#viewimc";
+					window.location.href = "#linkH";
 					if(sex=="fem") { //SEXO FEMININO  
 						if ( parseFloat(19.1)<=imc && imc<=parseFloat(25.8) ) { //PESO IDEAL
 							document.getElementById('sitimc').innerHTML = 'Parabéns! Você está dentro do peso.';
