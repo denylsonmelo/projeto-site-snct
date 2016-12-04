@@ -18,8 +18,9 @@
 		</style>
 		<link rel="stylesheet" type="text/css" media="(min-width: 1080px") href="css/index_large.css"/>
 		<link rel="stylesheet" type="text/css" media="(max-width: 1079px") href="css/index_small.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iframe.css"/>
 	</head>
-	<body>
+	<body onload="fadein('talk1')">
 	<script language="javascript" src="js/facebook-sdk.js"></script>
 	<div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -57,7 +58,30 @@
 					<h1 id="viewimc"><label for="massform">Veja aqui o seu IMC.</label></h1>
                 	<h3 id="sitimc">Fique por dentro da sua situação.</h3>
 				</hgroup>
-				<iframe name="imctype" class="imcwindow" id="iframe" src="iframe/iframe-index.html" scrolling="no"></iframe>
+				<!-- <iframe name="imctype" class="imcwindow" id="iframe" src="iframe/iframe-index.html" scrolling="no"></iframe> -->
+				<div id="corpo">
+					<figure id="talk1">
+						<img class="balao" id="balao1" src="img/talk/balao1.png"/>
+						<img class="balao" id="balao2" src="img/talk/balao2.png"/>
+						<img class="balao" id="balao3" src="img/talk/balao3.png"/>
+						<figcaption>
+							<p id="ex">Diálogo meramente demonstrativo, sem distinção de sexo.</p>
+						</figcaption>
+					</figure>
+					<article id="inf">
+						<h2>ANTES DE QUALQUER COISA, LEIA!</h2>
+						<p>Este foi um trabalho realizado pelos alunos do 1º ano do Curso de Informática Integrado ao Ensino Médio do IFPI Campus Parnaíba em 2016 como principal proposta do projeto <span>TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) apresentado na <span>SNCT</span> 2016 (Semana Nacional de Ciência e Tecnologia).</p>
+						<p>Por ser um projeto desenvolvido pelos alunos de 1º ano, toda e qualquer informação provida por meio deste site, não deve ser seguida sem antes ser realizada uma consulta e acompanhamento por uma nutricionista, pois ela, como profissional formada e especializada na área, pode lhe ajudar a ganhar ou perder peso de acordo com o seu IMC.</p>
+						<h3>Professores Orientadores</h3>
+						<ul id="professores">
+							<li id="p1">Denylson Melo</li>
+							<li id="p2">Márcia Regina</li>
+							<li id="p3">Antonio Santos</li>
+							<li id="p4">Antônio Carlos</li>
+						<ul>
+						<img id="ifpiLogo" src="img/ifpilogo.png"/>
+					</article>
+				</div>
 			</section>
 			<aside class="windgets">
 				<form id="calcimc" name="imcalc" action="javascript: imc_calc();">
@@ -101,7 +125,8 @@
 					<div id="comm" class="fb-comments" data-href="https://denylsonmelo.github.io/projeto-site-snct/index.html" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
 				</div>
 				<div id="sobre">
-					<h3 class="declar">Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) - By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
+					<h3 class="declar">Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável)</h3>
+					<h3>By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
 					<p class="declar">Site 100% desenvolvido em HTML5, CSS3 e Javascript<br/>Otimizado para <span id="tavisNome">Google Chrome</span> e <span id="tavisNome">Mozilla Firefox</span>.</p>
 				</div>
 			</footer>

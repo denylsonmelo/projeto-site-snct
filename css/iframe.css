@@ -3,7 +3,7 @@
 body {
 	font-family: arial, sans-serif;
 }
-h1 {
+#corpo h1 {
 	font-size: 20pt;
 	padding-bottom: 7px;
 	border-bottom: solid 1px;
@@ -54,7 +54,7 @@ article {
 	border-bottom-left-radius: 10px;
 	box-sizing: border-box;
 }
-article h2 {
+#corpo article h2 {
 	padding-left: 8px;
 	padding-right: 12.5px;
 	padding-bottom: 10px;
