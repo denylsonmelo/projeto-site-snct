@@ -6,132 +6,52 @@
 		<title>Reufi | Home</title>
         <link rel="icon" href="img/logo/logo2.png"/>
         <!-- DESIGN BY "JOÃO PAULO CARVALHO" -->
-        <style type="text/css">
-        	@media screen and (min-width: 1080px) {
-				#logofig figcaption p {
-					display: block;
-					margin-top: -75px;
-					margin-left: 179px;
-					font-weight: bold;
-				} /* Hello World! */
-			}
-		</style>
-		<link rel="stylesheet" type="text/css" media="(min-width: 1080px") href="css/index_large.css"/>
-		<link rel="stylesheet" type="text/css" media="(max-width: 1079px") href="css/index_small.css"/>
-		<link rel="stylesheet" type="text/css" href="css/iframe.css"/>
+				<style>
+					* {
+						font-family: arial, sans-serif;
+					} body {
+						background-color: #6fb965;
+					} #woman {
+						width: 115px;
+					} #name {
+						width: 240px;
+						margin-left: -20px;
+					} #logo {
+						display: block;
+						width: 350px;
+						margin-left: auto;
+						margin-right: auto;
+					} #alpha {
+						display: block;
+						position: absolute;
+						margin: -180px auto auto 230px;
+						font-weight: bold;
+					} #manutenc {
+						display: block;
+						width: 301px;
+						margin: 10px auto 0px auto;
+					} #manutenc p {
+						text-transform: uppercase;
+						text-align: center;
+						font-weight: bolder;
+						margin-top: 5px;
+						font-size: 18pt;
+					}
+				</style>
 	</head>
-	<body onload="fadein('talk1')">
-	<script language="javascript" src="js/facebook-sdk.js"></script>
-	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=512147582177041";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<body >
 		<header>
-		<figure id="logofig">
-			<img id="log1" src="img/logo/logo1.png" alt="Design by João Paulo Carvalho"/>
-			<img id="log2" src="img/logo/logo2.png" alt="Design by João Paulo Carvalho"/>
-			<img id="log3" src="img/logo/logo_NAME.png" alt="Design by João Paulo Carvalho"/>
+			<figure id="logo">
+				<img id="woman" src="img/logo/logo1.png"/>
+				<img id="name" src="img/logo/logo_NAME.png"/>
+				<figcaption id="alpha"><p>ALPHA</p></figcaption>
+			</figure>
+		</header>
+		<figure id="manutenc">
+			<img src="img/screenc.png"/>
 			<figcaption>
-				<p id="alpha">ALPHA</p>
-				<p id="mobile">MOBILE</p>
+				<p>Site em manutenção</p>
 			</figcaption>
 		</figure>
-		</header>
-		<div class="interface">
-			<nav class="menu">
-   				<ul type="disc">
-        			<h1> Menu Principal </h1>
-        			<li><a href="index.html" id="here"> Home </a></li>
-        			<li><a href="eaeNutri.html"> Iae Nutri </a></li>
-        			<li><a href="sobre.html" id="linkH"> Sobre nós </a></li>
-	 			</ul>
-   			</nav>
-   			<div id="ajud">
-   				<a id="textAjud" href="#rod">Ajude o projeto</a>
-   			</div>
-			<section class="postagens">
-				<hgroup id="imcscreen">
-					<h1 id="viewimc"><label for="massform">Veja aqui o seu IMC.</label></h1>
-                	<h3 id="sitimc">Fique por dentro da sua situação.</h3>
-				</hgroup>
-				<!-- <iframe name="imctype" class="imcwindow" id="iframe" src="iframe/iframe-index.html" scrolling="no"></iframe> -->
-				<div id="corpo">
-					<figure id="talk1">
-						<img class="balao" id="balao1" src="img/talk/balao1.png"/>
-						<img class="balao" id="balao2" src="img/talk/balao2.png"/>
-						<img class="balao" id="balao3" src="img/talk/balao3.png"/>
-						<figcaption>
-							<p id="ex">Diálogo meramente demonstrativo, sem distinção de sexo.</p>
-						</figcaption>
-					</figure>
-					<article id="inf">
-						<h2>ANTES DE QUALQUER COISA, LEIA!</h2>
-						<p>Este foi um trabalho realizado pelos alunos do 1º ano do Curso de Informática Integrado ao Ensino Médio do IFPI Campus Parnaíba em 2016 como principal proposta do projeto <span>TAVIS</span> (Tecnologia Alimentando uma Vida Saudável) apresentado na <span>SNCT</span> 2016 (Semana Nacional de Ciência e Tecnologia).</p>
-						<p>Por ser um projeto desenvolvido pelos alunos de 1º ano, toda e qualquer informação provida por meio deste site, não deve ser seguida sem antes ser realizada uma consulta e acompanhamento por uma nutricionista, pois ela, como profissional formada e especializada na área, pode lhe ajudar a ganhar ou perder peso de acordo com o seu IMC.</p>
-						<h3>Professores Orientadores</h3>
-						<ul id="professores">
-							<li id="p1">Denylson Melo</li>
-							<li id="p2">Márcia Regina</li>
-							<li id="p3">Antonio Santos</li>
-							<li id="p4">Antônio Carlos</li>
-						<ul>
-						<img id="ifpiLogo" src="img/ifpilogo.png"/>
-					</article>
-				</div>
-			</section>
-			<aside class="windgets">
-				<form id="calcimc" name="imcalc" action="javascript: imc_calc();">
-                	<fieldset>
-                		<style>#alertPont{border: 1px dashed white; margin-top: 0px; padding: 5px; text-align: center;}</style>
-                    	<legend>Calcule o seu IMC</legend>
-                    	<p id="alertPont">Em caso de números decimais, utilize ponto (.) e não vírgula (,).</p>
-                		<input name="massa" id="massform" type="text" placeholder="Massa corporal (Kg)" required />
-                		<input name="altura" id="altform" type="text" placeholder="Altura (m)" required/>
-                        <select name="sexo" id="selectSex" placeholder="Informe o seu sexo">
-                        	<option if="n" value="0">Selecione o seu sexo</option>
-                        	<option id="f" value="fem">Feminino</option>
-                        	<option id="m" value="mas">Masculino</option>
-                        </select>
-                        <button type="submit" id="makecalc">Calcule</button>
-                    </fieldset>
-                </form>
-			</aside>
-			<p id="comming">EM BREVE: DIETAS</p>
-			<aside class="windgets2">
-				<h2>Observação sobre o cálculo</h2>
-				<p>Não pode ser aplicado em crianças. Pessoas musculosas podem ter o IMC alto e não serem consideradas gordas. A influência de diferenças raciais e étnicas (de acordo com a organização mundial de saúde, pessoas de origem asiática poderiam ser consideradas acima do peso com um IMC de 23).</p>
-				<p>O (IMC) Índice de Massa Corporal, apesar de ter alguns problemas ainda é o método mais rápido para obter a informação se está abaixo do peso normal, acima do peso ideal, ou obeso.</p>
-			</aside>
-			<aside class="windgets3">
-				<a href="fotos.html">
-				<h2 onmouseout="fadeH2('out')" onmousemove="fadeH2('in')" id="fadeinH2">CLIQUE PARA VER AS FOTOS DA 13ª SEMANA NACIONAL DE CIÊNCIA E TECNOLOGIA</h2>
-				<figure onmouseout="fadeH2('out')" onmousemove="fadeH2('in')" id="figCap">
-					<img id="capa" src="img/fotos-snct/reufi-capa.jpg">
-				</figure></a>
-			</aside>
-			<footer class="rodape" id="rod">
-				<div class="fbox" id="curtidas">
-					<h1>Fã Page</h1>
-					<h2>Curta nossa pagina do Facebook</h2>
-					<iframe id="curti" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Freufi.tavis%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=938081739601081" width="100%" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-				</div>
-				<div class="fbox" id="comentarios">
-					<h1>Dê a sua opnião</h1>
-					<h2>Ajude a dar continuidade ao projeto</h2>
-					<div id="comm" class="fb-comments" data-href="https://denylsonmelo.github.io/projeto-site-snct/index.html" data-width="100%" data-numposts="5" data-colorscheme="dark"></div>
-				</div>
-				<div id="sobre">
-					<h3 class="declar">Reufi | Projeto <span id="tavisNome">TAVIS</span> (Tecnologia Alimentando uma Vida Saudável)</h3>
-					<h3>By <span id="tavisNome">Cyborg Team</span> - 2016 - Parnaíba-PI</h3>
-					<p class="declar">Site 100% desenvolvido em HTML5, CSS3 e Javascript<br/>Otimizado para <span id="tavisNome">Google Chrome</span> e <span id="tavisNome">Mozilla Firefox</span>.</p>
-				</div>
-			</footer>
-		</div>
 	</body>
-	<script language="javascript" src="js/fadein-talk.js"></script>
-    <script language="javascript" src="js/imc-calc-script.js"></script>
 </html>
