@@ -17,37 +17,6 @@ function imc_calc() {
 						if ( parseFloat(19.1)<=imc && imc<=parseFloat(25.8) ) { //PESO IDEAL
 							document.getElementById('sitimc').innerHTML = 'Parabéns! Você está dentro do peso.';
 							document.getElementById("iframe").src = 'iframe/imc-1.html';
-							document.getElementById("corpo").innerHTML =
-							'<div id="corpo">'+
-							'<header id="secundario">'+
-					           	'<nav class ="menu-sec">'+
-					            	'<ul>'+
-					            		'<li><a href="imc-1/dicas.html">Sugestão de cardápio</a></li>'+
-					            		'<li><a href="imc-1/alimentacao.html">Dicas</a></li>'+
-					            		'<p id="avis">NAVEGUE AO LADO</p>'+
-									'</ul>'+
-								'</nav>'+
-							'</header>'+
-							'<figure id="talk2">'+
-								'<img class="balao" id="balao4" src="../img/talk/balao4.png"/>'+
-								'<img class="balao" id="balao5" src="../img/talk/balao5.png"/>'+
-								'<img class="balao" id="balao6" src="../img/talk/balao6.png"/>'+
-								'<figcaption>'+
-									'<p id="ex">Diálogo meramente demonstrativo, sem distinção de sexo.</p>'+
-								'</figcaption>'+
-							'</figure>'+
-							'<article id="inf">'+
-								'<h2>LEMBRE-SE</h2>'+
-								'<figure>'+
-									'<img id="like" src="../img/like.png"/>'+
-									'<figcaption id="figScrr">'+
-										'<p id="scrr">O(a) nutricionista é sempre o melhor caminho!</p>'+
-										'<p id="scrr2">Não faça nada sem acompanhamento.</p>'+
-									'</figcaption>'+
-								'</figure>'+
-							'</article>'+
-							'</div>'
-							;
 						}
 						else if ( imc<parseFloat(19.1) ) { //ABAIXO DO PESO
 							document.getElementById('sitimc').innerHTML = 'Você está abaixo do peso.';
