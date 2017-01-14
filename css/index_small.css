@@ -273,9 +273,6 @@ fieldset legend {
 span#tavisNome {
 	font-weight: bold;
 }
-#comm {
-	z-index: 0;
-}
 .fbox {
 	display: block;
 	margin: 0px auto 0px auto;
